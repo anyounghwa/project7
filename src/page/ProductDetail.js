@@ -26,10 +26,10 @@ const ProductDetail = () => {
   return (
     <Container className='mt-5'>
       <Row>
-        <Col className='text-end'>
-          <img src={product?.img} />
+        <Col className='text-end' xs={12} md={6}>
+          <img src={product?.img} className='img-fluid'/>
         </Col>
-        <Col>
+        <Col xs={12} md={6}>
         <p><span>{product?.new && newImg}</span><span>{product?.sale && sale}</span><span>{product?.delivery && delivery}</span></p>
         <h3>{product?.title}</h3>
         <p>상세정보 : {product?.description}</p>
